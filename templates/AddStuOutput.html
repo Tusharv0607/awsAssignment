@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee Output</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Avenir', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color:  #6b0202;
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        button[type="submit"] {
+            background-color:  #6b0202;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-style: italic;
+        }
+
+        button[type="submit"]:hover {
+            background-color:  #6b0202;
+        }
+    </style>
+</head>
+<body>
+    <h1>SUCCESSFUL</h1>
+    <h2>Your details have been updated in the database</h2>
+    <h2>{{ name }}</h2>
+
+    <form action="/" autocomplete="on" method="GET">
+        <button type="submit">GO BACK</button>
+    </form>
+</body>
+</html>

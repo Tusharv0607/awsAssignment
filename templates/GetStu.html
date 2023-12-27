@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Get Employee Details</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #c33939;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        button[type="submit"] {
+            background-color: #7d7d7d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #636363;
+        }
+
+        button[type="submit"]:nth-child(2) {
+            background-color: #fff;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:nth-child(2):hover {
+            background-color: #eee;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<center>
+    <font color="black" size="5" style="font-family: avenir">
+
+        <h1 style="color: rgb(255, 30, 30)">Employee Detail</h1>
+
+        <body bgcolor="lightgrey">
+
+            <form action="/fetchdata" autocomplete="on" method="POST">
+
+                <h2 style="color: rgb(31, 29, 29)">Enter Employee ID</h2>
+
+                Employee ID:<br> <input style="height:25px;font-size:14pt;" type="number" name="emp_id" autofocus
+                    size="40"><br><br>
+
+
+                <button type="submit"
+                    style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">FETCH
+                    INFO</button><br><br>
+
+                <button type="submit" formaction="http://3.133.139.138/"
+                    style="background: white	; height: 45px; width: 200px; color: black; size: 5; font:oblique;"
+                    method="GET">GO TO UPDATE DATABASE PAGE</button>
+
+            </form>
+
+        </body>
+    </font>
+</center>
+
+</html>

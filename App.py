@@ -30,7 +30,7 @@ def AddStu():
     dept = request.form['dept']
     desg = request.form['desg']
 
-    insert_sql = "INSERT INTO student VALUES (%s, %s, %s, %s, %s)"
+    insert_sql = "INSERT INTO Employee VALUES (%s, %s, %s, %s, %s)"
     cursor = db_conn.cursor()
 
     try:
